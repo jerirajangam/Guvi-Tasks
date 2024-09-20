@@ -1,0 +1,11 @@
+
+# Creating a file in /home/demo.txt
+	touch /home/demo.txt
+
+#Changing the permissions
+	chmod 764 /home/demo.txt
+		Or
+	chmod o+rwx,g+rw,o+r /home/demo.txt
+
+#To check the permissions
+	ls -l /home/demo.txt
