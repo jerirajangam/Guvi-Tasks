@@ -1,0 +1,13 @@
+touch file{1..20}.txt
+ls
+mv file{1..5}.txt file{1..5}.yml
+ls
+mv file1.txt file1.yml
+mv file2.txt file2.yml
+mv file3.txt file3.yml
+mv file4.txt file4.yml
+mv file5.txt file5.yml
+ls
+ls -lrth | sort -r -n | head -5
+ls -lrth | sort -n | head -5
+ls -lt

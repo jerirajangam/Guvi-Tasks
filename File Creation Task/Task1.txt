@@ -1,0 +1,7 @@
+mkdir /my_folder
+cd my_folder/
+vi my_file.txt
+vi another_file.txt
+cat another_file.txt >> my_file.txt
+cat my_file.txt
+ls -ll
