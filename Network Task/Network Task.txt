@@ -1,0 +1,30 @@
+Task 1
+
+# To get IP address of a particular domain
+	nslookup guvi.in
+		Or
+	dig guvi.in
+
+#To find CPU/Memory Usage of server
+	top  (cpu usage) or htop
+		&
+	free -m  (memory usage) or free -g
+
+# To test the connectivity between 2 nodes
+	We can use ping and traceroute command
+	ping <destination ip/domain name>
+	This command will tell the connectivity between the source and destination.
+			&
+	traceroute <destination ip/domain name>
+	This command will tell how the network is established from source to destination.
+
+Task 2
+#To check whether my port is Open or Not
+ 	We can use telnet , nc (netcat) and curl commands to check the port is open or not
+	Using telnet we can check the service status in a remote machine or destination machine. 
+		telnet guvi.com 9000
+
+	Using nc we can check the service status in a remote machine or destination machine.
+		nc -vz guvi.com 9000
+
+	
