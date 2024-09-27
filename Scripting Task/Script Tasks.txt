@@ -1,0 +1,29 @@
+Task 1
+#! /bin/bash
+
+read -p "Enter the URL: " url
+Status_code=$(curl -s -f -w "%{http_code}" "$url" -o /dev/null)
+echo "HTTP Status Code: $Status_code"
+if((Status_code >= 200 && Status_code < 300 ));then
+   echo "Success:$url is accessible"
+else
+   echo "Failure:$url returned error $Status_code and can not be reached"
+fi
+
+
+
+Task 2
+#! /bin/bash
+File="file.txt"
+sed -i "5,$ {/welcome/s/give/learning/g}" "$File"
+
+
+
+
+
+
+
+
+
+
+
