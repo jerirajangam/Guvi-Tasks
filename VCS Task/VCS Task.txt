@@ -1,0 +1,9 @@
+
+Establish a new directory, populate it with script files, initiate an empty repository on GitHub, convert the local directory into a Git repository,
+ and link it to GitHub for pushing the code into the repository.Perform merge, rebase, stash commands in following github repo.
+
+Created a dir named vcstask
+Inside the dir, created two script files in master branch
+then created a new branch dev and created files like dev1 dev2 dev3 dev4 dev5
+using these files in different branch executed git merge,rebase and stash
+
