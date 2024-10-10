@@ -1,0 +1,15 @@
+Task Description:
+
+Install docker on EC2 and explore the docker commands (docker images, containers, volumes, network)
+
+ # First I created an Instance in AWS
+ # Then I installed docker in the Instance, using
+	yum update
+	yum install docker
+ # Then I checked if the DOCKER is installed or not using,
+	docker --version  ---> This command will give only information about version
+	docker version    ---> This command will give informations about CLIENT & SERVER
+	docker info       ---> This command will give informations about DOCKER HOST,DAEMON & SERVER INFORMATION
+   Incase if we are not getting the informations about the server, we need to START the docker service using,
+	sudo service docker start
+ # After checking , I explored docker commands based on DOCKER IMAGES, CONTAINERS,VOLUMES & NETWORKS
