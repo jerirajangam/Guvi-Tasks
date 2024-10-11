@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Basic Information</title>
+</head>
+<body>
+    <h1>Basic Details</h1>
+    <p><strong>Name:</strong> Jeri J</p>
+    <p><strong>Occupation:</strong> DevOps Engineer</p>
+    <p><strong>Location:</strong> Coimbatore,TamilNadu</p>
+    <p><strong>Hobbies:</strong> Coding, Hiking, Fishing</p>
+</body>
+</html>
