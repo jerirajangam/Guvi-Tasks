@@ -1,0 +1,12 @@
+Create a custom docker image for nginx and deploy it using docker compose,
+where the volume bind mount should be at /var/opt/nginx location. Push the created custom docker image to your docker-hub.
+
+
+#First I created a Dockerfile to create docker image for nginx
+
+#Then I created a custom html file to display a message like "WELCOME TO MY CUSTOM NGINX SERVER" in the path /var/opt/nginx and
+ I used it as volume bind mount.
+
+# Then I created docker compose file and I used the image from Dockerfile and the content to display from html using the volume bind mount path.
+
+# Then I used docker compose command to run the container and then I added it to the dockerhub registry.   
