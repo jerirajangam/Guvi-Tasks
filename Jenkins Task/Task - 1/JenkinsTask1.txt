@@ -1,0 +1,15 @@
+Launch jenkins and explore creating projects and users.
+
+# First I Lauched an instance in AWS with Ubuntu.
+
+# 2nd
+  Installed Java 
+  Installed Jenkins
+
+# After Installing Jenkins I enabled jenkins port in AWS Security Groups to Launch Jenkins.
+
+# Then I lauched Jenkins using instanceIP and logged into Jenkins Server.
+
+# I explored project using FREESTYLE & PIPELINE.
+
+# Then I explored USERS by creating a user name-jeri and I explored it by giving permission to jeri user.
