@@ -1,2 +1,0 @@
-This is the first file which is having details of git.
-process details will be here
