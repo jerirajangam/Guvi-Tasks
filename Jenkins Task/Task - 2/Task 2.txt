@@ -1,0 +1,55 @@
+Create a simple script file and push it to repo. Create a project in Jenkins connected to your GitHub repository.
+When a commit is made to your repo, automatically build must get triggered from Jenkins and the output must be shared to me via email.
+
+# First I created a script file named task2.sh, then added few lines in the file and commited it and pushed it to GIT Repo
+  with the name JENKINS.
+
+# Then I created a Jenkins Pipeline and enabled SMTP Server, APP Password in google account to configure the mail and entered the SMTP details 
+  in Dashboard --> Manage Jenkins --> System. 
+
+# After Enabling and configuring the SMTP server and saving the pipeline script. I made a change by adding a line in the SCM,
+  to trigger the build using SCM Change. And the Result will be Shared via email.
+
+# I made the Build schedule like, The Build should be triggered only on the second minute after making the change in the SCM.
+  
+  
+pipeline{
+    agent any
+
+    stages {
+        stage('CheckOutCode'){
+            steps{
+                git 'https://github.com/jerirajangam/jenkins.git'
+            }
+        }
+        stage('Run Script'){
+            steps{
+                sh './task2.sh'
+            }
+        }
+    }
+    post {
+        failure {
+            emailext (
+                subject: "Jenkins Build Failed: ${currentBuild.fullDisplayName}",
+                body: "The build has failed. Please check the Jenkins console for details.",
+                to: "jeri.raja@gmail.com"
+            )
+        }
+        success {
+            emailext (
+                subject: "Jenkins Build Successful: ${currentBuild.fullDisplayName}",
+                body: "The Pipeline is successful.",
+                to: "jeri.raja@gmail.com"
+            )
+        }
+    }
+}
+
+
+
+
+
+
+
+
