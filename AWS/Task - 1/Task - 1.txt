@@ -1,0 +1,11 @@
+Create a windows Vm machine in AWS and connect with RDP open CMD in windows share the about system info.
+
+#First I Launched a Windows OS based Instance in AWS. 
+ Along with it I created a new .pem keypair to connect to The Server using RDP.
+
+#I entered into the instance and selected Connect --> RDP Client. Then generated password for RDP using the .pem keypair.
+
+#Then I Entered the username and password from the Instance. And connected it to the AWS-Windows server
+
+#After logging into the windows server I opened CMD and typed systeminfo to get the informations of the AWS-Windows system. 
+
