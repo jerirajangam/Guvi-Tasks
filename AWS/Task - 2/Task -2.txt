@@ -1,0 +1,24 @@
+Set up a VPC with an Internet gateway, create a public subnet with 256 IP addresses, a private subnet with 256 IP addresses,
+make a route table connecting the Internet gateway and the subnets, and launch a Linux EC2 instance by using the above VPC and public subnet.
+
+#First I Created a VPC named Guvi-VPC & Entered CIDR Block - 192.168.0.0/22 - 1022 
+
+#Then I Created Public Subnet named Guvi-PublicSubnet & selected myvpc(Guvi-VPC) & set the CIDR block with 256 IPs - 192.168.0.0/24 
+
+#Then I Created Private Subnet named Guvi-PrivateSubnet & selected myvpc(Guvi-VPC) & set the CIDR block with 256 IPs - 192.168.1.0/24
+
+#Then I  Created an Internet Gateway named Guvi-IGW and attached it to MyVPC
+
+
+#Then I Create a Route Table named Guvi-PublicRT for Public Subnet and Edited the route by adding the InternetGateway.
+ And Associated the Subnet with PublicSubnet.
+
+#Then I  Created an NAT Gateway named Guvi-NAT and attached it to MyVPC
+
+#I Create a Route Table named Guvi-PrivateRT for Private Subnet and Edited the route by adding the NatGateway.
+ And Associated the Subnet with PrivateSubnet.
+
+
+#I Launched a Linux EC2 Instance with Amazon Linux and Edited the Network by Adding the MyVPC and subnets.
+ then edited the security group of the instance by allowing the ssh port. Then Connected the EC2 Instance using Putty.
+
