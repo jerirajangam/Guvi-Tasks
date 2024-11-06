@@ -1,0 +1,24 @@
+Launch an EC2 instance (Linux and Windows) along with a web server. Then, create an EBS volume of 5 GB, attach it to an EC2 machine (Linux and Windows),
+and take a snapshot. Finally, create an EBS volume using the taken snapshot.
+
+
+Linux Based EC2-Instance
+=========================
+
+1. I created an EC2-Instance using Amazon Linux & connected using putty and installed httpd web server.
+2. In Elastic Block Store, I selected Volumes and created a new volume with 5GB and attached it to the EC2 Instance.
+3. After attaching the volume I formated the disk to make it available.
+4. Then I came back to the volume and created a snapshot from the volume.
+5. After creating SNAPSHOT, I created a volume using snapshot and attached the snapshot volume to the EC2 Instance. 
+   then repeated the same steps to format the volume.
+
+
+Windows Based EC2-Instance
+=========================
+
+1. I created an EC2-Instance using Windows and connected using RDP and installed web server(IIS).
+2. In Elastic Block Store, I selected Volumes and created a new volume with 5GB and attached it to the EC2 Instance.
+3. After attaching the volume I formated the disk to make it available.
+4. Then I came back to the volume and created a snapshot from the volume.
+5. After creating SNAPSHOT, I created a volume using snapshot and attached the snapshot volume to the EC2 Instance. 
+   then repeated the same steps to format the volume.
