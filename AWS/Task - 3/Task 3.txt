@@ -1,0 +1,16 @@
+Create a S3 bucket, with no public access and upload files to the bucket & view the logs using cloudwatch for the uploaded files.
+
+1. I created a s3 bucket by blocking the Public Access and enabling the versioning while creating the s3 itself.
+2. Then I uploaded files into the s3 bucket. I repeated it again by making a change in the file to check the versioning.
+3. To view the logs of the S3 bucket I created another s3 bucket where all the logs will be stored.
+4. To store the logs in new bucket I enabled the SERVER ACCESS LOGGING and selected the newly created bucket.Then all the logs of the first s3 bucket 
+   got stored in new s3 bucket.
+
+Launch two ec2-instances and connect it to a application load balancer, where the output traffic from the server must be an load balancer IP address
+
+1. I created 2 EC2-Instances and installed docker in both the Instances.
+2. I downloaded 2 web app servers and ran the web apps on each server with respective ports.
+3. Then I created TARGET GROUPS for each instance web app server.
+4. Next I created APPLICATION LOAD BALANCER with 2 Availability Zones. Then I add listerner of both the web apps server.
+   After adding the Listeners the load balancer becomes active and the target groups become healthy.
+5. Then I used the LOAD BALANCER DNS name to check the Web Apps Server.   
