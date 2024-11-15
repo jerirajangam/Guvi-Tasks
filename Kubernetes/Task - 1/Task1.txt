@@ -1,0 +1,10 @@
+Setup minikube at your local and explore creating namespaces (Go through official documentation).
+
+1. I started the docker engine and I run minikube.
+2. Logged into Powershell as a Administrator and started the minikube using the command minikube start.
+3. Then I checked for namespaces and pods, after checking I created namespace and changed the deafault namespace
+   to newly created namespace and ran a pod on the newly created namespace named guvi-dev with nginx.
+4. Then I deployed the service and port forwared it. after that I checked it, in the browser as localhost and 
+   it worked.
+5. Once everything was done and working, I deleted the deployment, service and pod.
+6. Finally I stopped the minikube using the command minikube Stop.  
