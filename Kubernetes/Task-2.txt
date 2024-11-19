@@ -1,0 +1,10 @@
+Create the K8s EKS,further you have to do the deployment of the Nginx application and 
+access the application outside the cluster.
+
+I created k8s EKS using both local and AWS EC2 Instance and deployed NGINX application and accessed outside 
+the cluster.
+
+1. I checked and installed AWS-CLI, eksctl and kubectl using official documentation.
+2. Next I created EKS cluster.
+3. Then I deployed nginx application using both the setup.
+4. I port forwared the application to a target port and accessed outside the cluster. 
