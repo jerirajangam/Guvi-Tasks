@@ -1,0 +1,7 @@
+Launch Linux EC2 instances in two regions using a single Terraform file.
+
+First I created folder name Terraform, then I created a file inside the folder with the name main.tf using visual studio code.
+I opened AWS console and copied the access key and secret key.
+After creating the file  main.tf, I open the command prompt terminal and enter the aws access key and secret key.
+Then I applied the terraform commands to execute the main.tf file. 
+First I executed terraform init to initiate the terraform. Then I ecexcuted the commands to create two ec2 instances in different region.
