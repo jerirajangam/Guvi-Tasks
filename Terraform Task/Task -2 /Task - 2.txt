@@ -1,9 +1,0 @@
-Create 2 EC2 instances on 2 different regions and install nginx using terraform script.
-
-First I created folder name Terraform Task 2, then I created a file inside the folder with the name main.tf using visual studio code.
-I copied the access key and secret key inside the provider block.
-After creating the file  main.tf, I open the command prompt terminal inside visual studio code.
-Then I applied the terraform commands to execute the main.tf file. 
-First I executed terraform init to initiate the terraform. Then I executed the commands terraform apply. Once after executing apply command
-two EC2 Instance got created in 2 different regions and the nginx service got installed.
-Then I checked the nginx service of both instances using public ip for the Instances.
