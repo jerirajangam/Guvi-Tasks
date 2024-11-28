@@ -1,0 +1,10 @@
+Install Prometheus and Grafana on a Linux EC2 machine, connect Prometheus to Grafana, and create a dashboard to view metrics.
+
+1. Created an EC2 Instance with Ubuntu OS and Instance type is t2.medium with instance name AWS-Monitoring.
+2. Connected to the Instance, then enabled ports to connect Grafana,Prometheus & Node Exporter.
+3. First installed Grafana using the official document and using the public ip of the instance logged into the grafana service.
+4. Second installed Prometheus using the official document and connected it using public ip of the instance.
+5. Third installed Node Exporter using the official document and connected it using public ip of the instance.
+6. After completing all the installation I integrated the node with the Prometheus and Integrated prometheus with grafana.
+7. Then I imported the Node Exporter Full Metrics dashboard into the grafana to view the metrics.
+8. Finally I restarted the Prometheus service, which gave me the metrics of the instance.   
