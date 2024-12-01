@@ -1,0 +1,10 @@
+Deploy a simple web application using AWS code commit, code build and deploy & access via browser and automate via codepipeline.
+
+Code Commit is not available for new user, so i used github.
+1. Created a basic html code to display details and uploaded in github.
+2. created a codebuild and attached the github source file.
+3. created s3 bucket and EC2 instance. In EC2 Instance installed necessary packages to deploy code like codedeploy-agent package.
+4. Also created roles and policies that are required and attached it the EC2 Instance.
+5. created a application, deployment group and code deploy, to deploy the basic details.
+6. created a codepipeline and deployed it. It got succeeded.
+7. Finally I checked it using the public ip of the EC2 Instance via browser.
